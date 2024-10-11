@@ -1,18 +1,46 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
     background-color: #f8f9fa;
 }
 
-h2 {
-    color: #333;
+.hero-section {
+    background: #0073e6;
+    padding: 120px 0;
 }
 
-a {
-    text-decoration: none;
+.hero-section h1 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.hero-section .lead {
+    font-size: 24px;
+    color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #0073e6 !important;
+}
+
+section {
+    padding: 60px 0;
+}
+
+#about h2, #projects h2, #contact h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.card-title {
+    font-weight: bold;
 }
 
 footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background-color: #0073e6;
+    color: white;
 }
