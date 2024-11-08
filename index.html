@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gauri Nagavkar | Bioinformatics & Data Science</title>
-    <!-- Bootstrap and FontAwesome for icons -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Gauri Nagavkar | Data Scientist</title>
+
+    <!-- Link to Bootstrap and FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <a class="navbar-brand" href="#">Gauri Nagavkar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -26,52 +30,59 @@
         </div>
     </nav>
 
-    <header class="hero-section text-center text-white">
-        <div class="container">
-            <h1 class="display-4">Hi, I'm Gauri Nagavkar</h1>
-            <p class="lead">Data Scientist | Bioinformatics | AI Enthusiast</p>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container h-100 d-flex justify-content-center align-items-center">
+            <div class="text-center">
+                <h1 class="display-4">Hi, I'm Gauri Nagavkar</h1>
+                <p class="lead">Data Scientist | Bioinformatics | AI Enthusiast</p>
+                <a href="#projects" class="btn btn-primary mt-4">Explore My Work</a>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="py-5 text-center">
+    <!-- About Section -->
+    <section id="about" class="py-5">
         <div class="container">
-            <h2 class="mb-4">About Me</h2>
-            <p class="text-muted">
-                I am a data scientist with a focus on bioinformatics, leveraging machine learning and data science to solve clinical and health-related challenges. 
-                I have extensive experience in genomic data analysis, survival analysis, and AI-driven pipeline optimization.
-                I enjoy working on projects that merge biology with cutting-edge computational methods.
+            <h2 class="text-center mb-4">About Me</h2>
+            <p class="text-center">
+                I am a data scientist focused on bioinformatics, specializing in genomic data analysis and machine learning. 
+                My goal is to solve complex clinical and health-related problems by combining my data science skills with insights 
+                from biology. With experience in developing and optimizing bioinformatics workflows, I work to drive meaningful 
+                discoveries and improve healthcare outcomes.
             </p>
         </div>
     </section>
 
-    <section id="projects" class="py-5 bg-light text-center">
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
         <div class="container">
-            <h2 class="mb-4">Projects</h2>
+            <h2 class="text-center mb-4">Projects</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
+                    <div class="card shadow-sm mb-4">
                         <div class="card-body">
                             <h5 class="card-title">RAPIDS Genomics</h5>
-                            <p class="card-text">Explore GPU-accelerated genomic data analysis using RAPIDS.</p>
-                            <a href="https://github.com/gauri-nagavkar/RAPIDS_genomics" class="btn btn-primary">View Project</a>
+                            <p class="card-text">GPU-accelerated genomic data analysis using RAPIDS for scalable processing.</p>
+                            <a href="https://github.com/gauri-nagavkar/RAPIDS_genomics" class="btn btn-outline-primary">View Project</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
+                    <div class="card shadow-sm mb-4">
                         <div class="card-body">
                             <h5 class="card-title">Somatic Tertiary Analysis</h5>
-                            <p class="card-text">My work on DNAnexus focusing on somatic tertiary analysis workflows.</p>
-                            <a href="https://github.com/dnanexus/OpenBio/tree/master/somatic_tertiary_analysis" class="btn btn-primary">View Project</a>
+                            <p class="card-text">Contributions to DNAnexus for somatic tertiary analysis workflows.</p>
+                            <a href="https://github.com/dnanexus/OpenBio/tree/master/somatic_tertiary_analysis" class="btn btn-outline-primary">View Project</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
+                    <div class="card shadow-sm mb-4">
                         <div class="card-body">
                             <h5 class="card-title">Medium Article</h5>
-                            <p class="card-text">Learn how I harness the power of GPUs for bioinformatics.</p>
-                            <a href="https://medium.com/@gaurinagavkar/harnessing-the-power-of-gpus-for-bioinformatics-a4e2123c5b7c" class="btn btn-primary">Read Article</a>
+                            <p class="card-text">Harnessing GPU power for bioinformatics research.</p>
+                            <a href="https://medium.com/@gaurinagavkar/harnessing-the-power-of-gpus-for-bioinformatics-a4e2123c5b7c" class="btn btn-outline-primary">Read Article</a>
                         </div>
                     </div>
                 </div>
@@ -79,21 +90,37 @@
         </div>
     </section>
 
-    <section id="contact" class="py-5 text-center">
-        <div class="container">
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
             <h2 class="mb-4">Contact</h2>
-            <p class="text-muted">Feel free to connect with me for collaborations or inquiries.</p>
-            <a href="https://linkedin.com/in/gaurinagavkar" class="btn btn-outline-primary btn-lg"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <p>Let’s connect! Reach out for collaborations or inquiries.</p>
+            <a href="https://linkedin.com/in/gaurinagavkar" class="btn btn-primary btn-lg"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="text-center py-3">
-        <p>&copy; 2024 Gauri Nagavkar. Built with ❤️.</p>
+        <p>&copy; 2024 Gauri Nagavkar | Built with ❤️</p>
     </footer>
 
-    <!-- Bootstrap and jQuery scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- JS and Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        $('a[href^="#"]').on('click', function(e){
+            e.preventDefault();
+            var target = this.hash;
+            var $target = $(target);
+            $('html, body').animate({
+                scrollTop: $target.offset().top - 60
+            }, 800);
+        });
+    });
+</script>
+
 </body>
 </html>
