@@ -1,24 +1,23 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f8f9fa;
     color: #333;
 }
 
-.navbar-brand {
+.navbar-dark .navbar-brand {
     font-weight: bold;
     font-size: 1.5rem;
 }
 
 .nav-link {
-    font-weight: 600;
     color: #0073e6 !important;
+    font-weight: 600;
 }
 
 .hero-section {
     height: 100vh;
-    background: url('path-to-your-background-image.jpg') no-repeat center center/cover;
+    background: url('path-to-background.jpg') no-repeat center center/cover;
     color: white;
-    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .hero-section h1 {
@@ -28,6 +27,7 @@ body {
 
 section h2 {
     font-size: 2.5rem;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
@@ -37,13 +37,11 @@ section h2 {
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 footer {
     background-color: #0073e6;
     color: white;
-    padding: 15px 0;
-    font-size: 0.9rem;
 }
