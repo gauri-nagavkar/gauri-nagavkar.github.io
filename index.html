@@ -34,9 +34,9 @@
     <header class="hero-section">
         <div class="container h-100 d-flex justify-content-center align-items-center">
             <div class="text-center text-white">
-                <h1 class="display-4">Hi, I'm Gauri Nagavkar</h1>
+                <h1 class="display-4">Hello, I'm Gauri Nagavkar</h1>
                 <p class="lead">Data Scientist | Bioinformatics | AI Enthusiast</p>
-                <a href="#projects" class="btn btn-primary mt-4">See My Work</a>
+                <a href="#projects" class="btn btn-primary mt-4">Explore My Projects</a>
             </div>
         </div>
     </header>
@@ -46,9 +46,8 @@
         <div class="container text-center">
             <h2>About Me</h2>
             <p>
-                I’m a data scientist specializing in bioinformatics, focused on large-scale genomic data analysis 
-                and machine learning solutions for healthcare. My background in data science allows me to bridge 
-                the gap between biology and computational tools to drive impactful research and innovation.
+                I am a data scientist specializing in bioinformatics, focused on developing AI-driven solutions for healthcare and genomic data analysis.
+                My expertise lies in using machine learning to derive insights from complex data, bridging the gap between biology and technology.
             </p>
         </div>
     </section>
@@ -59,28 +58,28 @@
             <h2>Projects</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card shadow-sm mb-4">
+                    <div class="project-card shadow-sm mb-4">
                         <div class="card-body">
                             <h5 class="card-title">RAPIDS Genomics</h5>
-                            <p class="card-text">GPU-accelerated genomics analysis with RAPIDS for scalable processing.</p>
+                            <p class="card-text">A project utilizing GPU-accelerated genomics for efficient data analysis.</p>
                             <a href="https://github.com/gauri-nagavkar/RAPIDS_genomics" class="btn btn-outline-primary">View Project</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card shadow-sm mb-4">
+                    <div class="project-card shadow-sm mb-4">
                         <div class="card-body">
                             <h5 class="card-title">Somatic Tertiary Analysis</h5>
-                            <p class="card-text">Contributions to DNAnexus for workflows in somatic tertiary analysis.</p>
+                            <p class="card-text">Contributions to DNAnexus, developing workflows for somatic analysis.</p>
                             <a href="https://github.com/dnanexus/OpenBio/tree/master/somatic_tertiary_analysis" class="btn btn-outline-primary">View Project</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card shadow-sm mb-4">
+                    <div class="project-card shadow-sm mb-4">
                         <div class="card-body">
                             <h5 class="card-title">Medium Article</h5>
-                            <p class="card-text">Using GPUs to power bioinformatics research.</p>
+                            <p class="card-text">Insights on GPU use in bioinformatics research.</p>
                             <a href="https://medium.com/@gaurinagavkar/harnessing-the-power-of-gpus-for-bioinformatics-a4e2123c5b7c" class="btn btn-outline-primary">Read Article</a>
                         </div>
                     </div>
@@ -93,7 +92,7 @@
     <section id="contact" class="py-5">
         <div class="container text-center">
             <h2>Contact</h2>
-            <p>Feel free to connect for collaborations or inquiries!</p>
+            <p>Let’s connect! Reach out for collaborations or inquiries.</p>
             <a href="https://linkedin.com/in/gaurinagavkar" class="btn btn-primary btn-lg"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </div>
     </section>
@@ -107,14 +106,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- Smooth Scrolling -->
     <script>
         $(document).ready(function(){
             $('a[href^="#"]').on('click', function(e){
                 e.preventDefault();
                 var target = this.hash;
-                var $target = $(target);
                 $('html, body').animate({
                     scrollTop: $target.offset().top - 60
                 }, 800);
