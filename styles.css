@@ -1,27 +1,61 @@
+/* General Body and Font */
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #333;
+    color: rgb(97, 109, 119); /* Text Color */
+    background-color: rgb(255, 255, 255); /* Light Background */
 }
 
-.navbar-dark .navbar-brand {
-    font-weight: bold;
+/* Navbar */
+.navbar-dark {
+    background-color: rgb(23, 81, 133); /* Secondary Color */
 }
 
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+    color: rgb(255, 255, 255) !important; /* White Text */
+    font-weight: 600;
+}
+
+.navbar-dark .nav-link:hover {
+    color: rgb(43, 132, 210) !important; /* Primary Color on Hover */
+}
+
+/* Hero Section */
 .hero-section {
     height: 100vh;
-    background: url('your-background-image.jpg') no-repeat center center/cover;
-    color: white;
+    background-color: rgb(42, 29, 66); /* Dark Background */
+    color: rgb(255, 255, 255); /* White Text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .hero-section h1 {
     font-size: 3.5rem;
+    color: rgb(43, 132, 210); /* Primary Color */
 }
 
+.hero-section p {
+    color: rgb(221, 221, 228); /* Light Accent Color */
+}
+
+.hero-section .btn-primary {
+    background-color: rgb(43, 132, 210); /* Primary Color */
+    border: none;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: rgb(23, 81, 133); /* Secondary Color on Hover */
+}
+
+/* Project Cards */
 .project-card {
-    position: relative;
-    overflow: hidden;
+    background-color: rgb(255, 255, 255); /* White Background */
+    border: 1px solid rgb(221, 221, 228); /* Light Accent Color for Border */
     border-radius: 8px;
-    transition: transform 0.3s;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
@@ -31,17 +65,27 @@ body {
 
 .project-card img {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
 }
 
+.project-card h5 {
+    color: rgb(23, 81, 133); /* Secondary Color */
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Experience Cards */
 .experience-card {
-    background: white;
-    border-left: 4px solid #0073e6;
+    background-color: rgb(255, 255, 255); /* White Background */
+    border-left: 4px solid rgb(43, 132, 210); /* Primary Color for Border */
+    color: rgb(97, 109, 119); /* Text Color */
     padding: 20px;
     border-radius: 8px;
+    margin-bottom: 15px;
 }
 
+/* Skills Section */
 .skills-list {
     display: flex;
     flex-wrap: wrap;
@@ -50,20 +94,40 @@ body {
 }
 
 .skill-tag {
-    background-color: #f0f0f0;
+    background-color: rgb(221, 221, 228); /* Light Accent Background */
+    color: rgb(42, 29, 66); /* Dark Background for Text */
     padding: 10px 15px;
     border-radius: 5px;
     font-size: 1rem;
 }
 
+/* Contact Section */
+#contact {
+    background-color: rgb(23, 81, 133); /* Secondary Color */
+    color: rgb(255, 255, 255); /* White Text */
+    padding: 50px 0;
+}
+
 .contact-form .form-control {
-    background: #f8f9fa;
+    background: rgb(221, 221, 228); /* Light Accent */
     border: none;
     padding: 15px;
+    color: rgb(42, 29, 66); /* Dark Text Color */
 }
 
 .contact-form button {
-    background: #0073e6;
-    color: white;
+    background: rgb(43, 132, 210); /* Primary Color */
+    color: rgb(255, 255, 255); /* White Text */
     border: none;
+}
+
+.contact-form button:hover {
+    background: rgb(23, 81, 133); /* Secondary Color */
+}
+
+/* Footer */
+footer {
+    background-color: rgb(42, 29, 66); /* Dark Background */
+    color: rgb(255, 255, 255); /* White Text */
+    padding: 15px 0;
 }
