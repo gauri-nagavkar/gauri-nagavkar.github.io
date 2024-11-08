@@ -9,22 +9,18 @@ body {
 
 .hero-section {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-background-image.jpg') no-repeat center center/cover;
+    background: url('your-background-image.jpg') no-repeat center center/cover;
     color: white;
 }
 
 .hero-section h1 {
     font-size: 3.5rem;
-    font-weight: 700;
-}
-
-section h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
 }
 
 .project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
     transition: transform 0.3s;
 }
 
@@ -33,7 +29,41 @@ section h2 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-footer {
-    background-color: #0073e6;
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.experience-card {
+    background: white;
+    border-left: 4px solid #0073e6;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skill-tag {
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form .form-control {
+    background: #f8f9fa;
+    border: none;
+    padding: 15px;
+}
+
+.contact-form button {
+    background: #0073e6;
     color: white;
+    border: none;
 }
